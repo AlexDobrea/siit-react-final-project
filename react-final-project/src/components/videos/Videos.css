@@ -1,0 +1,210 @@
+.video-card {
+  box-shadow: 0 4px 8px 0 rgba(74, 175, 116, 0.8);
+  border-radius: 0.5em;
+  width: 20em;
+  height: 27em;
+  margin: 3em auto 1em;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+  
+.video-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.video-card h5 {
+  margin: 0.8em;
+}
+
+.video-card a {
+  text-decoration: none;
+  padding: 0.2em 1em 0.2em;
+  border: 1px transparent #339952;
+  background-color: #339952;
+  color: white;
+  height: fit-content;
+}
+
+.videoList-search {
+  position: fixed;
+  top: 2.5em;
+  left: 1em;
+}
+
+.videoDetails {
+  box-shadow: 0 8px 16px 0 rgba(74, 175, 116, 0.8);
+  border-radius: 0.5em;
+  margin-left: 10%;
+}
+
+.videoDetails h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+.videoDetails div {
+  width: fit-content !important;
+}
+
+.videoDetails p {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.videoDetails-addComments input {
+  width: 100%;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.4em 0;
+}
+
+.videoDetails-addComments button {
+  float: right;
+  border-radius: 1em;
+  color: white;
+  background-color: green;
+  padding: 0.3em 1em;
+  margin: 1em 0;
+}
+
+.videoDetails-delete {
+  padding-bottom: 0.5em;
+}
+
+.videoDetails-delete>button {
+  margin: 1em 0;
+  padding: 0.3em 4em;
+  border-radius: 1em;
+  color: white;
+  background-color: #f44336;
+}
+
+.videoDetails-delete>button:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+
+.videoDetails h4 {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+
+.videoDetails-comments {
+  margin-left: 0px;
+}
+
+.videoDetails-comments button {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+  border-radius: 1em;
+  margin-left: 5em;
+  padding: 0.3em 4em;
+  background-color: blue;
+  color: white;
+}
+
+.editComment-container {
+  justify-content: center;
+  border: 5px solid #f2f5f3;  
+}
+
+.editComment-container input[type=text] {
+  width: 100%;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.4em 0;
+}
+
+.editComment-container button {
+  align-content: center;
+  background-color: #339952;
+  border-radius: 1em;
+  border-radius: 1em;
+  padding: 0.3em 2em;
+  margin-top: 1em;
+  color: white;
+}
+
+.addVideo-container {
+  margin: 7em 1em 0 1em;  
+  display: flex;
+  justify-content: center;
+  border: 30px double #f2f5f3;  
+}
+
+.addVideo-form {
+  justify-content: center;
+  width: 100%;
+}
+
+.addVideo-form input[type=text], input[type=url] {
+  width: 100%;
+  padding: 0.4em;
+  margin: 0.3em 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.addVideo-form button {
+  background-color: #339952;
+  width: 100%;
+  margin-top: 2em;
+  padding: 0.5em;
+  color: white;
+}
+
+@media screen and (min-width: 398px) {
+  .videoList-search {
+    left: 5em;
+  } 
+
+  .videoDetails {
+    margin-top: 5em;
+  }
+
+  
+}
+
+@media screen and (min-width: 595px) {
+  .videoList-search {
+    left: 40vw;
+  }
+
+  .video-card {
+    margin: 0 1em 2em;
+    font-size: 1em;
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .videoDetails {
+    margin-top: 1em;
+  }
+  .videoDetails h3 {
+    margin-top: 1em;
+  }
+
+  .addVideo-container {
+    margin-top: 1em;
+    margin-left: 5em;
+}
+}
+
+@media screen and (min-width: 790px) {
+  .videoList-search {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+  }
+
+  .addVideo-container {
+    margin-top: 0em;
+    margin-left: 10em;
+    width: 100%;
+}
+}

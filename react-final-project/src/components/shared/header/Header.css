@@ -1,0 +1,65 @@
+.app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .app-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 3vw;
+    overflow: hidden;
+    background-color: #339952;
+  }
+  
+  .app-header li {
+    float: left;
+  }
+  
+  .app-header li a {
+    text-decoration: none;
+    display: block;
+    align-content: flex-end;
+    color: white;
+    text-align: center;
+    padding: 14px 12px;
+  }
+  
+  .logo-header {
+    height: 3em;
+  }
+
+  .app-header>ul>li a.active{
+    color: rgb(163, 226, 37);
+  }
+
+  .app-header-auth {
+    display: flex;
+  }
+
+  @media screen and (min-width: 380px) {
+    .app-header ul{
+      padding-bottom: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 595px) {
+    .app-header ul{
+      padding-left: 30vw;
+      padding-bottom: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 790px) {
+    .app-header ul{
+      padding-left: 30vw;
+      padding-bottom: 0;
+    }
+  }
+
+
+  @media screen and (min-width: 950px) {
+    .app-header ul{
+      padding-left: 30vw;
+    }
+  }
