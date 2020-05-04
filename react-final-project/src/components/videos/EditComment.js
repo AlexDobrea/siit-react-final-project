@@ -51,9 +51,9 @@ export default function EditComment() {
         <div className="editComment-container">
             <h1> Edit comment "{ comment.body }"</h1>
             <form onSubmit={ handleChangeEvent}>
-                <label htmlFor="comment" ></label>
+                <label htmlFor="comment"></label>
                 <input
-                    onChange={handleCommentInputChange}
+                    onChange={ handleCommentInputChange }
                     value={ comment.body }
                     type="text"
                     id="comment"

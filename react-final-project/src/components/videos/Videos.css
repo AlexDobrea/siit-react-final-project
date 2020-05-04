@@ -71,6 +71,10 @@
   margin: 1em 0;
 }
 
+.videoDetails-addComments>button:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
 .videoDetails-delete {
   padding-bottom: 0.5em;
 }

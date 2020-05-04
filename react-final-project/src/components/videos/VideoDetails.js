@@ -109,7 +109,6 @@ function VideoDetails() {
                     :
                     ''
                 }
-                
             </div>
         )
     } else {

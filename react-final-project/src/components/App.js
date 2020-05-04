@@ -15,6 +15,7 @@ import { jsonUrl } from '../config';
 import UserContext from './auth/UserContext';
 import AddVideo from './videos/AddVideo';
 import EditComment from './videos/EditComment';
+import PrivateRoute from './auth/PrivateRoute';
 
 axios.defaults.baseURL = jsonUrl;
 
@@ -45,12 +46,12 @@ function App() {
                     <Route exact path="/videos/:videoId" >
                         <VideoDetails />
                     </Route>
-                    <Route exact path="/comments/:commentId">
+                    <PrivateRoute exact path="/comments/:commentId">
                         <EditComment />
-                    </Route>
-                    <Route exact path="/addVideo">
+                    </PrivateRoute>
+                    <PrivateRoute exact path="/addVideo">
                         <AddVideo />
-                    </Route>
+                    </PrivateRoute>
                     <Route exact path="/register">
                         <Register />
                     </Route>
