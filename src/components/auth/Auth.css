@@ -1,0 +1,83 @@
+.auth-container {
+    display: inline-block;
+    margin: 3.5em 1em 0 1em;    
+}
+
+.auth {
+    display: flex;
+    justify-content: center;
+    border: 30px double #f2f5f3;
+}
+
+.auth-form {
+    justify-content: center;
+}
+
+.login-logo{
+    display: none;
+}
+
+.register-logo{
+    display: none;
+}
+
+.auth input[type=text], input[type=password] {
+    width: 100%;
+    padding: 0.4em;
+    margin: 0.3em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.auth button {
+    background-color: #339952;
+    width: 100%;
+    padding: 0.5em;
+    color: white;
+}
+
+.auth-successfull {
+    color: green;   
+}
+
+@media screen and (min-width: 594px) {
+    .auth-container {
+        margin-top: 1em;
+        margin-left: 5em;
+    }
+
+    .login-logo {
+        display: block;
+        width: 60%;
+        border-radius: 50%;
+    }
+    .register-logo {
+        display: block;
+        width: 90%;
+        border-radius: 50%
+    }
+}
+
+@media screen and (min-width: 752px) {
+    .auth-container {
+        margin-top: 0em;
+        margin-left: 10em;
+    }
+
+    .register-logo {
+        width: 78%;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .auth-container {
+        margin-top: 0em;
+        margin-left: 15em;
+    }
+
+    .register-logo {
+        width: 80%;
+    }
+}
+
