@@ -9,6 +9,11 @@
       "username": "alex1",
       "password": "1",
       "id": 2
+    },
+    {
+      "username": "alex2",
+      "password": "1",
+      "id": 3
     }
   ],
   "comments": [

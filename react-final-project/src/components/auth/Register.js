@@ -44,8 +44,6 @@ function Register() {
 
         for(const user of users) {            
             if(user.username === formData.username) {
-                console.log('global error');
-            
                 setIsDirty(false);
                 setIsGlobalError(true);
 
