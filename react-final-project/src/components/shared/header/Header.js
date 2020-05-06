@@ -16,7 +16,7 @@ function Header() {
     }
 
     return (
-        <div className="app-header">
+        <nav className="app-header">
             <ul >
                 <li><img className="logo-header" src={ logo } alt="logo"/></li>
                 <li><NavLink exact to="/" activeClassName="active">Photos</ NavLink></li>
@@ -38,7 +38,7 @@ function Header() {
                 </li>
             </ul>
 
-        </div>
+        </nav>
     )
 }
 

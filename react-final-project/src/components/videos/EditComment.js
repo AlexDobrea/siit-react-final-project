@@ -5,13 +5,14 @@ import './Videos.css';
 
 export default function EditComment() {
     const { commentId } = useParams();
-    const [comment, setComment] = useState('');
+    const [comment, setComment] = useState({
+        body: ''
+    });
     const [isDirty, setIsDirty] = useState(false);
     const [redirect, setRedirect] = useState(false);   
 
     async function getCommentById(id) {
         const res = await Axios ('/comments/'+ id);
-        console.log(res.data);
         setComment(res.data);
     }
 
@@ -24,8 +25,6 @@ export default function EditComment() {
 
         setIsDirty(false);
 
-        console.log(comment);
-        
         await Axios ( '/comments/'+ commentId, {
             method: 'PATCH',
             data: ({'body': comment.body})

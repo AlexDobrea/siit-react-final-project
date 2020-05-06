@@ -36,7 +36,7 @@ export default function AddVideo() {
 
        if(!isInvalid) {
             setIsDirty(false);
-
+        
             await Axios('/videos', {
                 method: 'POST',
                 data: JSON.stringify( newVideo ),
@@ -47,7 +47,7 @@ export default function AddVideo() {
             });
 
             history.push('/videos');
-       }
+        }
 
     }
 
@@ -63,8 +63,9 @@ export default function AddVideo() {
             }
         }
 
-        if(!(/^['https'.*]/.test(newVideo.url))) {
-            newError.validUrl = errorMessages['validUrl'];    
+        if(!(/((http|ftp|https):\/\/)?[-a-zA-Z0-9@:%._~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_.~#?&//=]*)/i.test(newVideo.url))) {
+            newError.validUrl = errorMessages['validUrl']; 
+            isInvalid = true;   
         }
 
         setError(newError);
@@ -95,7 +96,7 @@ export default function AddVideo() {
 
     return(
         <div className="addVideo-container">
-            <form onSubmit={ handleSubmit } className="addVideo-form"> 
+            <form onSubmit={ handleSubmit } className="addVideo-form" noValidate> 
                 <label htmlFor="tags">Tags:</label>
                 <input 
                     onChange={ handleInputChange }

@@ -16,30 +16,6 @@ function PhotoList() {
         const res = await axios(apiUrl + '/?key=' + apiKey);
         setPhotos(res.data.hits);
     }
-
-    // const [searchData, setSearchData] = useState([]);
-    // const [isDirty, setIsDirty]=useState(false);
-   
-    // async function handleSearch(e) {
-    //     e.preventDefault(); 
-
-    //     setIsDirty(false);
-
-    //     console.log(searchData);
-
-    //     const res= await axios(apiUrl + '/?key=' + apiKey + '&q=' + searchData.search );
-    //     console.log(res.data.hits);
-        
-    //     setPhotos(res.data.hits);         
-    // }
-
-    // function searchFilterChange(e) {
-    //     setIsDirty(true);
-    //     setSearchData({
-    //         ...searchData,
-    //         [e.currentTarget.id]: e.currentTarget.value,
-    //     });
-    // }   
     
     const [values, setValues] = useState({});
     const [status, setStatus] = useState({
@@ -69,16 +45,6 @@ function PhotoList() {
 
     return (
         <>
-            {/* <form onSubmit={ handleSearch} className="photoList-search"> 
-                <input 
-                    onChange={ searchFilterChange }
-                    value={ searchData.value }
-                    type="text" 
-                    id= "search"
-                    placeholder="Search by tags" />
-                <button type="submit" disabled={ !isDirty }>Search</button>
-            </form> */}
-
             <form onSubmit={ handleSearchEvent } className="photoList-search">
                 <FormField 
                     type="text"

@@ -49,14 +49,15 @@ function VideoDetails() {
 
         setIsDirty(false);
        
-        await axios('/comments' , {
+        const com = await axios('/comments' , {
             method: 'POST',
             data: ({ 
                 'body' : comment.comment,
                 'userName': user,
                 'videoId': videoId
-         }),
-        });
+            }),
+        }).then(res => res.data);
+        setGetComments([...getComments, com]);
     }
 
     function handleInputChange(e) {

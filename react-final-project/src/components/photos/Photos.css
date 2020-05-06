@@ -48,14 +48,14 @@
 }
 
 @media screen and (min-width: 398px) {
-    .photoList-search {
-      left: 5em;
-    }
+  .photoList-search {
+    left: 5em;
+  }
 
-    .photoDetails {
-      margin-top: 5em;
-      width: 80%; 
-    }
+  .photoDetails {
+    margin-top: 5em;
+    width: 80%; 
+  }
 }
 
 @media screen and (min-width: 595px) {

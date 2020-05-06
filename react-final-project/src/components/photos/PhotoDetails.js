@@ -20,7 +20,7 @@ function PhotoDetails() {
     
     if(photo && photo.length) {
         const item = photo[0];
-        console.log( photo );
+        // console.log( photo );
         return (
                 <div className="photoDetails">
                     <h5>Tags: { item.tags }</h5>

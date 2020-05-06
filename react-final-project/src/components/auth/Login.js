@@ -46,10 +46,8 @@ function Login() {
                 setIsSuccessfull(true);
 
                 setTimeout(() => {
-                    setIsSuccessfull(false);
-                }, 5000);
-
-                history.push('/')
+                    history.push('/');
+                }, 3000);
             }
 
             if(!res.data.length) {
@@ -57,7 +55,7 @@ function Login() {
 
                 setTimeout(() => {
                     setIsInvalidData(false);
-                }, 5000);
+                }, 3000);
             }
         }
     }
