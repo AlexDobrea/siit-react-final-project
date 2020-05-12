@@ -164,19 +164,19 @@
 
 @media screen and (min-width: 398px) {
   .videoList-search {
+    top: 2.5em;
     left: 5em;
   } 
 
   .videoDetails {
     margin-top: 5em;
   }
-
-  
 }
 
 @media screen and (min-width: 595px) {
   .videoList-search {
-    left: 40vw;
+    top: 1em;
+    left: 12em;
   }
 
   .video-card {
@@ -196,19 +196,31 @@
   .addVideo-container {
     margin-top: 1em;
     margin-left: 5em;
-}
+  }
 }
 
 @media screen and (min-width: 790px) {
   .videoList-search {
-    position: fixed;
     top: 1em;
-    left: 1em;
+    left: 20em;;
   }
 
   .addVideo-container {
     margin-top: 0em;
     margin-left: 10em;
     width: 100%;
+  }
 }
+@media screen and (min-width: 950px) {
+  .videoList-search {
+    top: 1em;
+    left: 25em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .videoList-search {
+    top: 1em;
+    left: 35em;
+  }
 }

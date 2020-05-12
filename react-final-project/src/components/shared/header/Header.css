@@ -4,62 +4,64 @@
     width: 100%;
   }
   
-  .app-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0 2vw;
-    overflow: hidden;
-    background-color: #339952;
-  }
-  
-  .app-header li {
-    float: left;
-  }
-  
-  .app-header li a {
-    text-decoration: none;
-    display: block;
-    align-content: flex-end;
-    color: white;
-    text-align: center;
-    padding: 14px 12px;
-  }
-  
-  .logo-header {
-    height: 3em;
-  }
+.app-header ul {
+  list-style: none;
+  display: block;
+  align-items: center;
+  margin: 0;
+  padding: 0 0.5em;
+  background-color: #339952;
+}
 
-  .app-header>ul>li a.active{
-    color: rgb(163, 226, 37);
+.app-header li a {
+  text-decoration: none;
+  display: block;
+  align-content: flex-end;
+  color: white;
+  text-align: center;
+  padding: 1em 0.4em;
+}
+
+.logo-header {
+  height: 3em;
+}
+
+.app-header a.active{
+  color: rgb(163, 226, 37);
+}
+
+.app-header-auth {
+  display: block;;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 400px) {
+  .app-header ul{
+    display: flex;
+    padding-bottom: 0.8em;
   }
 
   .app-header-auth {
     display: flex;
+    padding-right: 0;
   }
+}
 
-  @media screen and (min-width: 380px) {
-    .app-header ul{
-      padding-bottom: 0.8em;
-    }
+@media screen and (min-width: 595px) {
+  .app-header ul{
+    padding-left: auto;
+    padding: 0;
   }
+}
 
-  @media screen and (min-width: 595px) {
-    .app-header ul{
-      padding-left: 30vw;
-      padding-bottom: 0.8em;
-    }
+@media screen and (min-width: 950px) {
+  .app-header ul {
+    padding: 0 8em;
   }
+}
 
-  @media screen and (min-width: 790px) {
-    .app-header ul{
-      padding-left: 30vw;
-      padding-bottom: 0;
-    }
+@media screen and (min-width: 1200px) {
+  .app-header ul {
+    padding: 0 13em;
   }
-
-
-  @media screen and (min-width: 950px) {
-    .app-header ul{
-      padding-left: 30vw;
-    }
-  }
+}
